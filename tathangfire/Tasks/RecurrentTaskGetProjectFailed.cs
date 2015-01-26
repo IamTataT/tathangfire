@@ -32,24 +32,24 @@ namespace tathangfire.Tasks
         }
 
         public void GetProject(){
-            IList<Project> failedProjectList = _sgProjectRepo.AllEndedProjects().Where(project => _projectService.IsProjectFailed(project)).ToList();
+            IList<Project> failedProjectList = _sgProjectRepo.AllEndedProjectsAndNotSendEmail().Where(project => _projectService.IsProjectFailed(project)).ToList();
             foreach (var currentProject in failedProjectList)
             {
                 var dbProject = _dbProjectRepo.Get(currentProject.Id.ToString());
-                if (dbProject.IsFailProject)
-                {
-                    continue;
-                }
+                //if (dbProject.IsFailProject)
+                //{
+                //    continue;
+                //}
                 IEnumerable<UserIdentity> pledgerIds = _pledgeRepo.FindAllPledgerIdentityByProjectId(currentProject.Id);
                 foreach (var userId in pledgerIds)
                 {
                     var user = _userRepo.GetUserById(userId);
                     var email = user.Email;
-                    //TODO: send email to user
+                    //send email to user
                     //BackgroundJob.Enqueue(() => new MailController().NotifyProjectFailed(email, currentProject).Deliver());
                     BackgroundJob.Enqueue<SendEmailWhenProjectFailedTask>(x => x.Send(userId.ToLong(), currentProject.Id.ToString()));
                 }
-                //TODO: mark this project as sended
+                //mark this project as sended
                 dbProject.IsFailProject = true;
                 _dbProjectRepo.Update(dbProject);
                 _dbProjectRepo.Save();
