@@ -17,20 +17,20 @@ namespace tathangfire.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IProjectRepository _projectRepo;
-        private ISGExtendedProjectRepository _sgProjectRepo;
-        private ProjectService _projectService;
-        private IPledgeRepository _pledgeRepo;
-        private IUserRepository _userRepo;
+        //private readonly IProjectRepository _projectRepo;
+        //private ISGExtendedProjectRepository _sgProjectRepo;
+        //private ProjectService _projectService;
+        //private IPledgeRepository _pledgeRepo;
+        //private IUserRepository _userRepo;
         private RecurrentTaskGetProjectFailed _recurrentTask;
 
-        public HomeController(IProjectRepository projectRepo, ISGExtendedProjectRepository sgProjectRepo, ProjectService projectService, IPledgeRepository pledgeRepo, IUserRepository userRepo, RecurrentTaskGetProjectFailed recurrentTask)
+        public HomeController(RecurrentTaskGetProjectFailed recurrentTask)
         {
-            _projectRepo = projectRepo;
-            _sgProjectRepo = sgProjectRepo;
-            _projectService = projectService;
-            _pledgeRepo = pledgeRepo;
-            _userRepo = userRepo;
+            //_projectRepo = projectRepo;
+            //_sgProjectRepo = sgProjectRepo;
+            //_projectService = projectService;
+            //_pledgeRepo = pledgeRepo;
+            //_userRepo = userRepo;
             _recurrentTask = recurrentTask;
         }
         public ActionResult Index()

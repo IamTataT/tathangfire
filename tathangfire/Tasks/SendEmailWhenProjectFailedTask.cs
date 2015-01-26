@@ -25,7 +25,6 @@ namespace tathangfire.Tasks
             var user = _userRepo.GetUserById(new UserIdentity(userId.ToString()));
             var email = user.Email;
             var project = _projectRepo.FindById(new ProjectIdentity(projectId));
-            //TODO: mark project as sended
 
             new MailController().NotifyProjectFailed(email, project).Deliver();
         }
