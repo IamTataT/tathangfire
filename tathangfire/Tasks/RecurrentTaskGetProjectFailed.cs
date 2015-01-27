@@ -40,15 +40,21 @@ namespace tathangfire.Tasks
                 //{
                 //    continue;
                 //}
-                IEnumerable<UserIdentity> pledgerIds = _pledgeRepo.FindAllPledgerIdentityByProjectId(currentProject.Id);
-                foreach (var userId in pledgerIds)
+                IEnumerable<PledgeItem> pledgeitem = _pledgeRepo.GetPlegeItemsByProjectId(currentProject.Id);
+                foreach (var pledgeid in pledgeitem)
                 {
-                    var user = _userRepo.GetUserById(userId);
-                    var email = user.Email;
-                    //send email to user
-                    //BackgroundJob.Enqueue(() => new MailController().NotifyProjectFailed(email, currentProject).Deliver());
-                    BackgroundJob.Enqueue<SendEmailWhenProjectFailedTask>(x => x.Send(userId.ToLong(), currentProject.Id.ToString()));
+                    var pledgerid = pledgeid.Pledger;
+                    BackgroundJob.Enqueue<SendEmailWhenProjectFailedTask>(x => x.Send(pledgerid.ToString(), pledgeid.Id.ToString()));                 
                 }
+                //IEnumerable<UserIdentity> pledgerIds = _pledgeRepo.FindAllPledgerIdentityByProjectId(currentProject.Id);
+                //foreach (var userId in pledgerIds)
+                //{
+                //    var user = _userRepo.GetUserById(userId);
+                //    var email = user.Email;               
+                //    //send email to user
+                //    //BackgroundJob.Enqueue(() => new MailController().NotifyProjectFailed(email, currentProject).Deliver());
+                //    BackgroundJob.Enqueue<SendEmailWhenProjectFailedTask>(x => x.Send(userId.ToLong(), currentProject.Id.ToString()));
+                //}
                 //mark this project as sended
                 dbProject.IsFailProject = true;
                 _dbProjectRepo.Update(dbProject);

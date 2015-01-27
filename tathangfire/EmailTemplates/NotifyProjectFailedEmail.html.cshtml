@@ -1,22 +1,30 @@
-﻿@model Zeekpipo.CrowdFundingDomain.Model.Project
+﻿@*Model tathangfire.Tasks.DataToSendEmailProjectFail*@
 @{
-    ViewBag.Title = "ご支援いただいたプロジェクトに関しまして";
+    ViewBag.Title = "NotifyProjectFailedEmail";
 }
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-</head>
-<body>
-    <br />
-    <br />++++++++++++++++++++++++++++++++++++++++++++++++++++
-    <br />ゲームクリエイターとゲームファンをつなげる！
-    <br />クラウドライブ
-    <br />URL：http://www.crowdrive.com/
-    <br />お問い合わせ：<a href="mailto:contact@crowdrive.com" target="_top">contact@crowdrive.com</a>
-    <br />++++++++++++++++++++++++++++++++++++++++++++++++++++
-</body>
-</html>
-
-
+@Model.DisplayName 様<br />
+<br />
+    いつもクラウドライブをご利用いただき誠にありがとうございます。<br />
+    誠に残念ながら @Model.DisplayName 様が支援されたプロジェクトが目標金額に到達いたしませんでした。<br />
+<br />
+    ■ご支援いただいたプロジェクト<br />
+    プロジェクト名： @Model.ProjectTitle<br />
+    URL： @Model.ProjectUrl <br />
+<br />
+    ■リターン内容<br />
+    リターン名： @Model.PledgedRewardName<br />
+    金額： @Model.PledgedAmount 円 <br />
+<br />
+    これからも魅力的なプロジェクトの提供を目指してまいりますので、今後ともクラウドライブをよろしくお願いいたします。<br />
+<br />
+    ※リターンに関しましては、大変申し訳ございませんがプロジェクトが成立していないため、お客さまのお手元に届きません。<br />
+    ※そのため手数料等を含め支援いただいた際の決済もキャンセルとなります。<br />
+    ※キャンセル料等も発生しておりません。<br />
+    ※決済がキャンセルとなっておりますので、クレジットカードの履歴には残りません。<br />
+<br />
+<br />++++++++++++++++++++++++++++++++++++++++++++++++++++
+<br />ゲームクリエイターとゲームファンをつなげる！
+<br />クラウドライブ
+<br />URL：http://www.crowdrive.com/
+<br />お問い合わせ：<a href="mailto:contact@crowdrive.com" target="_top">contact@crowdrive.com</a>
+<br />++++++++++++++++++++++++++++++++++++++++++++++++++++
