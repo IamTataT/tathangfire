@@ -5,6 +5,7 @@ using System.Web;
 using tathangfire.Controllers;
 using Zeekpipo.Core.Model;
 using Zeekpipo.Core.Repository;
+using Zeekpipo.CrowdFundingDomain.Exception;
 using Zeekpipo.CrowdFundingDomain.Model;
 using Zeekpipo.CrowdFundingDomain.Repository;
 
@@ -34,14 +35,16 @@ namespace tathangfire.Tasks
             var reward = project.GetReward(new RewardIdentity(rewardid.ToString()));
             var user = _userRepo.GetUserById(new UserIdentity(pledgerid.ToString()));
             var email = user.Email;
-            var projectURL = _sgProjectRepo.GetCustomUrlFromProjectIdentity(projid);
-            if(projectURL.Equals(null))
+            var projectURL = "";
+            try
+            {
+                projectURL = _sgProjectRepo.GetCustomUrlFromProjectIdentity(projid);
+                projectURL = "http://crowdrive.com/view/" + projectURL;
+                
+            }
+            catch (ProjectNotFoundException e)
             {
                 projectURL = "http://crowdrive.com/project/detail/" + projid.ToString();
-            }
-            else
-            {
-                projectURL = "http://crowdrive.com/view/" + projectURL;
             }
             try
             {
