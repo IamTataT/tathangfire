@@ -49,6 +49,7 @@ C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\ActionMailer.Net.Mvc.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\ActionMailer.Net.Standalone.pdb
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\ActionMailer.Net.Standalone.xml
+C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Antlr3.Runtime.pdb
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Castle.Core.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Castle.Windsor.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Castle.Windsor.Lifestyles.pdb
@@ -57,6 +58,7 @@ C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\EntityFramework.SqlServer.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Hangfire.Core.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Hangfire.SqlServer.xml
+C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Newtonsoft.Json.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\RazorEngine.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.Helpers.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.Mvc.xml
@@ -65,8 +67,6 @@ C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.WebPages.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.WebPages.Razor.xml
-C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Antlr3.Runtime.pdb
-C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Newtonsoft.Json.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Microsoft.AspNet.Identity.EntityFramework.xml
@@ -79,6 +79,5 @@ C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\obj\Debug\CrowdriveHangfire.csprojResolveAssemblyReference.cache
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\obj\Debug\tathangfire.dll
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\obj\Debug\tathangfire.pdb
