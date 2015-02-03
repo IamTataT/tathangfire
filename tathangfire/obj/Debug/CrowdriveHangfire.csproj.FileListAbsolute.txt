@@ -82,3 +82,4 @@ C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\obj\Debug\tathangfire.dll
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\obj\Debug\tathangfire.pdb
+C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\obj\Debug\CrowdriveHangfire.csprojResolveAssemblyReference.cache

@@ -366,6 +366,14 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <PropertyGroup>
+    <PreBuildEvent>xcopy /Y /I "$(SolutionDir)..\crowdrive\Core\bin\AWSDev\Zeekpipo.Core.dll" "$(ProjectDir)lib\"
+xcopy /Y /I "$(SolutionDir)..\crowdrive\CrowdFundingDomain\bin\AWSDev\Zeekpipo.CrowdFundingDomain.dll" "$(ProjectDir)lib\"
+xcopy /Y /I "$(SolutionDir)..\crowdrive\Data\bin\AWSDev\Zeekpipo.Data.dll" "$(ProjectDir)lib\"
+xcopy /Y /I "$(SolutionDir)..\crowdrive\Infrastructure\bin\AWSDev\Zeekpipo.Infrastructure.dll" "$(ProjectDir)lib\"
+xcopy /Y /I "$(SolutionDir)..\crowdrive\Model\bin\AWSDev\Zeekpipo.Model.dll" "$(ProjectDir)lib\"
+xcopy /Y /I "$(SolutionDir)..\crowdrive\SharedDomain\bin\AWSDev\Zeekpipo.SharedDomain.dll" "$(ProjectDir)lib\"</PreBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
