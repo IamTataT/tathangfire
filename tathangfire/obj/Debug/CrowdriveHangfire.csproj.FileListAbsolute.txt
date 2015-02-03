@@ -29,6 +29,7 @@ C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Newtonsoft.Json.dll
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Owin.dll
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\RazorEngine.dll
+C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.Abstractions.dll
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.Helpers.dll
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.Mvc.dll
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.Optimization.dll
@@ -60,8 +61,8 @@ C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Hangfire.SqlServer.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\Newtonsoft.Json.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\RazorEngine.xml
-C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.Helpers.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.Mvc.xml
+C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.Helpers.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.Optimization.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.Razor.xml
 C:\Users\Kittitat\Documents\Visual Studio 2013\Projects\tathangfire\tathangfire\bin\System.Web.WebPages.xml
