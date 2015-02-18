@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using tathangfire.Tasks;
 using Zeekpipo.CrowdFundingDomain.Model;
 
 namespace tathangfire.Controllers
@@ -20,11 +21,11 @@ namespace tathangfire.Controllers
             get { return AppDomain.CurrentDomain.BaseDirectory + @"\EmailTemplates"; }
         }
 
-        public RazorEmailResult NotifyProjectFailed(string email, Project project)
+        public RazorEmailResult NotifyProjectFailed(string email, DataToSendEmailProjectFail model)
         {
             To.Add(email);
-            Subject = "Notification System: Project failed";
-            return Email("NotifyProjectFailedEmail", project);
+            Subject = "ご支援いただいたプロジェクトに関しまして";
+            return Email("NotifyProjectFailedEmail", model);
         }
     }
 }

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrowdriveHangfire", "tathangfire\CrowdriveHangfire.csproj", "{9AA6B734-BFC2-412C-A037-C2545A44397C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AWSDev|Any CPU = AWSDev|Any CPU
+		AWSProd|Any CPU = AWSProd|Any CPU
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9AA6B734-BFC2-412C-A037-C2545A44397C}.AWSDev|Any CPU.ActiveCfg = AWSDev|Any CPU
+		{9AA6B734-BFC2-412C-A037-C2545A44397C}.AWSDev|Any CPU.Build.0 = AWSDev|Any CPU
+		{9AA6B734-BFC2-412C-A037-C2545A44397C}.AWSProd|Any CPU.ActiveCfg = AWSProd|Any CPU
+		{9AA6B734-BFC2-412C-A037-C2545A44397C}.AWSProd|Any CPU.Build.0 = AWSProd|Any CPU
+		{9AA6B734-BFC2-412C-A037-C2545A44397C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AA6B734-BFC2-412C-A037-C2545A44397C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AA6B734-BFC2-412C-A037-C2545A44397C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AA6B734-BFC2-412C-A037-C2545A44397C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
